@@ -1,0 +1,149 @@
+/* Default */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 12px/18px arial,sans-serif;
+    background-image: url(img/bg_Img.webp);
+}
+
+.container {
+    margin: auto;
+    width: 80%;
+}
+
+/* Style Header Start */
+.judul {
+    text-align: right;
+    padding: 10px;
+}
+
+.banner {
+    background-image: url(img/banner.jpg);
+    background-size: cover;
+    height: 160px;
+    background-position: 0px -150px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top: 1px solid salmon;
+}
+/* Style Header End */
+
+/* Style Content Start */
+.content {
+    padding: 20px;
+    background-color: white;
+
+    display: grid;
+    grid-template-areas: 
+    'profile kontak'
+    'about about'
+    'exp hobi';
+    grid-template-columns: 1fr 1fr;
+}
+
+.profile {
+    grid-area: profile;
+}
+
+.profile p {
+    margin-top: 5px;
+}
+
+img {
+    width: 150px;
+    box-shadow: 5px 5px 15px #eee;
+    border: 2px solid white;
+    border-radius: 100%;
+    z-index: 0;
+    margin-top: -135px;
+    margin-bottom: 5px;
+
+    object-fit: cover;
+}
+
+.kontak {
+    grid-area: kontak;
+    text-align: right;
+}
+
+.kontak ul li {
+    display: inline-block;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+a:hover {
+    text-decoration: none;
+    background-color: #eee;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.about {
+    border-top: 1px solid #999;
+    grid-area: about;
+    margin-top: 20px;
+}
+
+.about h4 {
+    margin-top: 10px;
+}
+
+.about p {
+    margin-top: 5px;
+}
+
+.exp {
+    border-top: 1px solid #999;
+    grid-area: exp;
+    margin-top: 20px;
+}
+
+.exp h4 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.exp ul li {
+    margin-left: 15px;
+}
+
+.hobi {
+    border-top: 1px solid #999;
+    grid-area: hobi;
+    margin-top: 20px;
+}
+
+.hobi h4 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.hobi ul li {
+    margin-left: 15px;
+}
+/* Style Content End */
+
+/* Style Footer Start */
+.footer {
+    background-color: #999;
+    color: white;
+    padding: 20px;
+}
+
+.footer p {
+    align-content: center;
+}
+/* Style Footer END */
